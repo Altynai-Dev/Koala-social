@@ -11,15 +11,18 @@ import Videos from "../../assets/images/9.png"
 import Messages from "../../assets/images/10.png"
 import Tutorials from "../../assets/images/12.png"
 import Courses from "../../assets/images/13.png"
+import { getAuthUser } from '../../helpers/functions'
 
 const Leftbar = () => {
+  const user = getAuthUser();
   return (
     <div className='leftBar'>
       <div className="container">
         <div className="menu">
+          
           <div className='user'>
-            <img src="https://www.wilsoncenter.org/sites/default/files/media/images/person/james-person-1.jpg" alt="person" />
-            <span>George Cluni</span>
+            <img src={user.profilePic} alt="person" />
+            <span>{user.username}</span>
           </div>
           <div className="item">
             <img src={Friends} alt="friends icon" />

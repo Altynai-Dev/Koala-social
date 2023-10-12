@@ -7,9 +7,11 @@ import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined'
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined'
 import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined'
 import { Link } from 'react-router-dom'
+import { getAuthUser } from '../../helpers/functions'
 
 
 const Navbar = () => {
+  const user = getAuthUser();
   return (
     <div className='navbar'>
         <div className="left">
@@ -28,8 +30,8 @@ const Navbar = () => {
             <EmailOutlinedIcon />
             <NotificationsOutlinedIcon />
             <div className='user'>
-                <img src="https://www.wilsoncenter.org/sites/default/files/media/images/person/james-person-1.jpg" alt="person" />
-                <span>George Cluni</span>
+                <img src={user.profilePic} alt="person" />
+                <span>{user.username}</span>
             </div>
         </div>
     </div>

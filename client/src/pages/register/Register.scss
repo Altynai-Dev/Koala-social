@@ -82,3 +82,37 @@
         }
     }
 }
+
+.loader {
+    display: flex;
+    justify-content:center;
+    margin-top: 250px;
+ }
+
+ .box__error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color:red ;
+    font-size: 18px;
+    width: 350px;
+    height: 200px;
+    border-radius: 30px;
+    border: 2px solid red;
+ }
+
+ .box__error button{
+    margin-top: 25px;
+    margin-bottom: 0px;
+    width: 35%;
+    padding: 10px;
+    border: none;
+    background-color: lightsalmon;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1rem;
+ }

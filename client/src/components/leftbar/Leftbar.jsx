@@ -12,8 +12,8 @@ import Messages from "../../assets/images/10.png";
 import Tutorials from "../../assets/images/12.png";
 import Courses from "../../assets/images/13.png";
 import { checkUserLogin, getAuthUser, logout, updateToken } from "../../helpers/function";
-import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 const Leftbar = () => {
   const navigate = useNavigate();
@@ -22,6 +22,8 @@ const Leftbar = () => {
   useEffect(() => {
     updateToken();
   }, []);
+
+
 
   return (
     <div className="leftBar">
@@ -74,7 +76,7 @@ const Leftbar = () => {
             <img src={Events} alt="events icon" />
             <span>Events</span>
           </div>
-          <div className="item">
+          <div className="item" onClick={() => navigate("/games")}>
             <img src={Games} alt="games icon" />
             <span>Games</span>
           </div>

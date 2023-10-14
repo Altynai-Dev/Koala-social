@@ -12,13 +12,13 @@ const Card = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/cards")
+      .get("http://localhost:8000/products")
       .then((response) => setCards(response.data));
   }, []);
 
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:8000/cards/${id}`)
+      .delete(`http://localhost:8000/products/${id}`)
       .then(() => setCards(cards.filter((card) => card.id !== id)));
   };
 

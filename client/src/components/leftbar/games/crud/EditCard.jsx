@@ -12,7 +12,7 @@ const EditCard = ({ card, onUpdate, onCancel }) => {
 
   const handleUpdate = () => {
     axios
-      .put(`http://localhost:8000/cards/${editedCard.id}`, editedCard)
+      .put(`http://localhost:8000/products/${editedCard.id}`, editedCard)
       .then(() => onUpdate(editedCard))
       .catch((error) => console.error("Ошибка при обновлении данных:", error));
     navigate("/games");

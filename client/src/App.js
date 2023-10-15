@@ -8,9 +8,10 @@ import Profile from './pages/profile/Profile';
 import Home from './pages/home/Home';
 import Rightbar from './components/rightbar/Rightbar';
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { getAuthUser } from './helpers/functions';
 
 function App() {
-  const currentUser = false;
+  const currentUser = getAuthUser();
 
   const queryClient = new QueryClient();
   const Layout = () =>{
@@ -41,7 +42,11 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <Layout />,
+      element: (
+        <ProtectedRoute>
+          <Layout />
+        </ProtectedRoute>
+      ),
       children: [
       {
         path: '/',

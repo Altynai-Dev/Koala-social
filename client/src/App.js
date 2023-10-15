@@ -7,12 +7,15 @@ import Leftbar from './components/leftbar/Leftbar';
 import Profile from './pages/profile/Profile';
 import Home from './pages/home/Home';
 import Rightbar from './components/rightbar/Rightbar';
-
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 function App() {
   const currentUser = false;
+
+  const queryClient = new QueryClient();
   const Layout = () =>{
     return(
+      <QueryClientProvider client={queryClient}>
       <div>
       <Navbar />
       <div style={{display: "flex"}}>
@@ -24,6 +27,7 @@ function App() {
         <Rightbar />
       </div>
       </div>
+      </QueryClientProvider>
     )
   }
 

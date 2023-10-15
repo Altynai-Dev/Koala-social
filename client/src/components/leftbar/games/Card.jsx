@@ -2,24 +2,40 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import EditCard from "./crud/EditCard";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 import { Button, Typography } from "@mui/material";
 import "./Game.scss";
 
 const Card = () => {
   const [cards, setCards] = useState([]);
+  const [likes, setLikes] = useState({});
+  const [currentUser, setCurrentUser] = useState("user1");
   const [editingCard, setEditingCard] = useState(null);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:8000/products")
-      .then((response) => setCards(response.data));
+    axios.get("http://localhost:5000/cards").then((response) => {
+      const initialLikes = response.data.reduce((acc, card) => {
+        const storedLikes = JSON.parse(
+          localStorage.getItem(`likes_${card.id}`)
+        ) || { count: 0, users: [] };
+        acc[card.id] = storedLikes;
+        return acc;
+      }, {});
+      setCards(response.data);
+      setLikes(initialLikes);
+    });
   }, []);
 
   const handleDelete = (id) => {
-    axios
-      .delete(`http://localhost:8000/products/${id}`)
-      .then(() => setCards(cards.filter((card) => card.id !== id)));
+    axios.delete(`http://localhost:5000/cards/${id}`).then(() => {
+      setCards(cards.filter((card) => card.id !== id));
+      // Удаление лайков из локального хранилища
+      localStorage.removeItem(`likes_${id}`);
+      // Удаление лайков из состояния
+      const updatedLikes = { ...likes };
+      delete updatedLikes[id];
+      setLikes(updatedLikes);
+    });
   };
 
   const handleEdit = (card) => {
@@ -35,6 +51,31 @@ const Card = () => {
 
   const handleCancelEdit = () => {
     setEditingCard(null);
+  };
+
+  const handleLike = (cardId) => {
+    const updatedLikes = { ...likes };
+    const currentUserLikes = updatedLikes[cardId].users;
+
+    if (currentUserLikes.includes(currentUser)) {
+      // Если пользователь уже поставил лайк, убираем его
+      updatedLikes[cardId].count -= 1;
+      updatedLikes[cardId].users = currentUserLikes.filter(
+        (user) => user !== currentUser
+      );
+    } else {
+      // Пользователь ставит лайк
+      updatedLikes[cardId].count += 1;
+      updatedLikes[cardId].users = [...currentUserLikes, currentUser];
+    }
+
+    // Сохраняем в локальное хранилище
+    localStorage.setItem(
+      `likes_${cardId}`,
+      JSON.stringify(updatedLikes[cardId])
+    );
+
+    setLikes(updatedLikes);
   };
 
   return (
@@ -77,7 +118,6 @@ const Card = () => {
             <Typography variant="body2" color="text.secondary">
               <p>{card.description}</p>
             </Typography>
-            {/* <p>type:s{card.type}</p> */}
             <div
               style={{
                 display: "flex",
@@ -88,9 +128,10 @@ const Card = () => {
               <div>
                 <LocalMallIcon />
               </div>
-
               <p>${card.price}</p>
-              <FavoriteBorderIcon />
+              <button onClick={() => handleLike(card.id)}>Like</button>
+              <span>{likes[card.id].count}</span>
+              <FavoriteIcon />
             </div>
             <div
               style={{

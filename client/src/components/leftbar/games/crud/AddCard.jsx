@@ -14,7 +14,7 @@ const AddCard = ({ onAdd }) => {
 
   const handleAdd = () => {
     axios
-      .post("http://localhost:8000/products", newCard)
+      .post("http://localhost:5000/cards", newCard)
       .then((response) => onAdd(response.data))
       .catch((error) => console.error("Ошибка при добавлении данных:", error));
 

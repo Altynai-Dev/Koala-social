@@ -1,7 +1,11 @@
+import { getAuthUser } from '../../helpers/function';
 import './Stories.scss'
 
 const Stories = () => {
      //TEMPORARY
+
+     const userName = getAuthUser()
+
   const stories = [
     {
       id: 1,
@@ -28,7 +32,7 @@ const Stories = () => {
     <div className='stories'>
       <div className="story">
                 <img src="https://images.pexels.com/photos/13916254/pexels-photo-13916254.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt='story' />
-                <span>George Cluni</span>
+                <span>{userName}</span>
                 <button>+</button>
             </div>
         {stories.map(story =>(

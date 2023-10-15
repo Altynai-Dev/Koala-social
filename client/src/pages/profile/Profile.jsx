@@ -9,8 +9,12 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Posts from "../../components/posts/Posts"
 import './Profile.scss'
+import { useState } from "react";
+import DefoltUser from '../../assets/images/defoltUser.png'
 
 const Profile = () => {
+const [userImg,setUserImg] = useState(`${DefoltUser}`)
+
   return (
     <div className="profile">
       <div className="images">
@@ -20,7 +24,7 @@ const Profile = () => {
           className="cover"
         />
         <img
-          src="https://images.pexels.com/photos/14028501/pexels-photo-14028501.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          src={userImg}
           alt=""
           className="profilePic"
         />

@@ -18,19 +18,19 @@ const Navbar = () => {
             <Link to='/' style={{textDecoration: 'none'}}>
             <span>Koala Social</span>
             </Link>
-            <HomeOutlinedIcon />
-            <GridViewIcon />
+            {/* <HomeOutlinedIcon />
+            <GridViewIcon /> */}
             <div className='search'>
             <SearchIcon />
             <input type='text' placeholder='Search...' />
             </div>
         </div>
         <div className="right">
-            <Person2OutlinedIcon />
+            {/* <Person2OutlinedIcon />
             <EmailOutlinedIcon />
-            <NotificationsOutlinedIcon />
+            <NotificationsOutlinedIcon /> */}
             <div className='user'>
-                <img src={user.profilePic} alt="person" />
+                <img src={'/upload/'+user.profilePic} alt="person" />
                 <span>{user.username}</span>
             </div>
         </div>

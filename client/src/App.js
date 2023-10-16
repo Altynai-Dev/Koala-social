@@ -12,6 +12,9 @@ import { getAuthUser } from './helpers/functions';
 import Users from './components/users/Users';
 import Games from './components/games/Games';
 import GameDetails from './components/gameDetails/GameDetails';
+import GameCreate from './components/gameCreate/GameCreate';
+import GameEdit from './components/gameEdit/GameEdit';
+import Cart from './components/cart/Cart';
 
 function App() {
   const currentUser = getAuthUser();
@@ -70,6 +73,18 @@ function App() {
       {
         path: '/games/:id',
         element: <GameDetails />
+      },
+      {
+        path: '/create-card',
+        element: <GameCreate />
+      }, 
+      {
+        path: '/edit-card/:id',
+        element: <GameEdit />
+      },
+      {
+        path: '/cart',
+        element: <Cart />
       }
     ]
     },

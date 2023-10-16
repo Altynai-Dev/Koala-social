@@ -29,3 +29,19 @@ export const createGame = createAsyncThunk(
         dispatch(getGames());
     }
 );
+
+export const editGame = createAsyncThunk(
+    'games/editGame',
+    async ({ game }, { dispatch }) => {
+        await axios.patch(`${GAMES_API}/${game.id}`, game);
+        dispatch(getGames());
+    }
+);
+
+export const deleteGame = createAsyncThunk(
+    'games/deleteGame',
+    async ({ id }, { dispatch }) => {
+        await axios.delete(`${GAMES_API}/${id}`);
+        dispatch(getGames());
+    }
+);

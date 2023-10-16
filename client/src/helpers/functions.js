@@ -9,6 +9,12 @@ export const getAuthUser = () => {
     return user;
 };
 
+export const isAdminFunction = () =>{
+    const user = getAuthUser();
+    if(user.username==="admin") return true;
+    return false;
+}
+
 export const logout = async() => {
     localStorage.removeItem('user');
     await axios.post('http://localhost:8888/api/auth/logout', {

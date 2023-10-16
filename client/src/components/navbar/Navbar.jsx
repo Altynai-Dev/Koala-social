@@ -7,14 +7,17 @@ import './Navbar.scss'
 // import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined'
 // import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined'
 import { Link, useNavigate } from 'react-router-dom'
-import { checkUserLogin, getAuthUser, logout } from '../../helpers/functions'
+import { checkUserLogin, getAuthUser, isAdminFunction, logout } from '../../helpers/functions'
 import LogoutIcon from '@mui/icons-material/Logout';
 import LoginIcon from '@mui/icons-material/Login';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 
 const Navbar = () => {
   const user = getAuthUser();
   const navigate = useNavigate();
+ 
+
   return (
     <div className='navbar'>
         <div className="left">
@@ -32,6 +35,8 @@ const Navbar = () => {
             {/* <Person2OutlinedIcon />
             <EmailOutlinedIcon />
             <NotificationsOutlinedIcon /> */}
+            <ShoppingCartIcon onClick={()=>navigate('/cart')} style={{cursor: 'pointer'}} />
+            {isAdminFunction() && <button onClick={()=>navigate('/create-card')}>Create card</button>}
             <div className='user'>
                 <img src='https://cdn-icons-png.flaticon.com/512/2424/2424317.png' alt="person" />
                 <span>{user.username}</span>

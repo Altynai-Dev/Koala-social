@@ -4,6 +4,8 @@ import postsReducer from './posts/postsSlice';
 import commentsReducer from './comments/commentsSlice';
 import likesReducer from './likes/likesSlice';
 import gamesReducer from './games/gamesSlice';
+import cartReducer from './cart/cartSlice';
+
 export default configureStore({
     middleware: getDefaultMiddleware => getDefaultMiddleware({
         serializableCheck: false
@@ -13,6 +15,7 @@ export default configureStore({
         posts: postsReducer,
         comments: commentsReducer,
         likes: likesReducer,
-        games: gamesReducer
+        games: gamesReducer,
+        cart: cartReducer
     }
 });

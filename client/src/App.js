@@ -9,6 +9,9 @@ import Home from './pages/home/Home';
 import Rightbar from './components/rightbar/Rightbar';
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { getAuthUser } from './helpers/functions';
+import Users from './components/users/Users';
+import Games from './components/games/Games';
+import GameDetails from './components/gameDetails/GameDetails';
 
 function App() {
   const currentUser = getAuthUser();
@@ -32,20 +35,20 @@ function App() {
     )
   }
 
-  const ProtectedRoute = ({children}) =>{
-    if(!currentUser){
-      return <Navigate to='/login'/>
-    }else{
-      return children
-    }
-  }
+  // const ProtectedRoute = ({children}) =>{
+  //   if(!currentUser){
+  //     return <Navigate to='/login'/>
+  //   }else{
+  //     return children
+  //   }
+  // }
   const router = createBrowserRouter([
     {
       path: '/',
       element: (
-        <ProtectedRoute>
+        // <ProtectedRoute>
           <Layout />
-        </ProtectedRoute>
+        // </ProtectedRoute>
       ),
       children: [
       {
@@ -55,6 +58,18 @@ function App() {
       {
         path: '/profile/:id',
         element: <Profile />
+      },
+      {
+        path: '/users',
+        element: <Users />
+      },
+      {
+        path: '/games',
+        element: <Games />
+      },
+      {
+        path: '/games/:id',
+        element: <GameDetails />
       }
     ]
     },

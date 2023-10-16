@@ -82,7 +82,8 @@ const Comments = ({ postId }) => {
   return (
     <div className="comments">
       <div className="write">
-        <img src={"/upload/" + currentUser.profilePic} alt="" />
+        {/* <img src={"/upload/" + currentUser.profilePic} alt="" /> */}
+        <img src="https://cdn2.iconfinder.com/data/icons/animals-nature-2/50/1F428-koala-512.png" alt="koala"/>
         <input
           type="text"
           placeholder="write a comment"
@@ -97,7 +98,8 @@ const Comments = ({ postId }) => {
         ? "loading"
         : data.map((comment) => (
             <div className="comment" key={comment.id}>
-              <img src={"/upload/" + comment.profilePic} alt="" />
+              {/* <img src={"/upload/" + comment.profilePic} alt="" /> */}
+              <img src="https://cdn.dribbble.com/users/2552597/screenshots/16185776/media/e32f74dea623c231593f7dbe03eb8397.png?resize=400x300&vertical=center" alt="koala" />
               <div className="info">
                 <span>{comment.name}</span>
                 <p>{comment.desc}</p>

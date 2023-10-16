@@ -12,6 +12,19 @@ export const getUser = (req, res)=>{
   });
 }
 
+export const getAllUsers = (req, res) =>{
+  const q = "SELECT * FROM users";
+
+  db.query(q, (err, data) => {
+    if (err) return res.status(500).json(err);
+    const newData = data.map(item => {
+      const { password, ...rest } = item; // Destructure and omit the 'password' field
+      return rest;
+    });
+    return res.status(200).json(newData);
+  });
+}
+
 export const updateUser = (req, res) => {
     const token = req.cookies.accesToken;
     if (!token) return res.status(401).json("Not authenticated!");

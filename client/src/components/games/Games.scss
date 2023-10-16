@@ -1,0 +1,24 @@
+.games{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 14px;
+    padding-top: 10px;
+    .card{
+        width: 300px;
+            height: 270px;
+            -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+            -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+            box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+            border-radius: 20px;
+        .cardContainer{
+            padding: 10px;
+            .gameImg{
+                width: 270px;
+                gap: 300px;
+                object-fit: cover;
+            }
+        }
+    }
+}

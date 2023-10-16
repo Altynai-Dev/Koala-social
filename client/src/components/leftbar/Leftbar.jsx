@@ -12,6 +12,7 @@ import Messages from "../../assets/images/10.png"
 import Tutorials from "../../assets/images/12.png"
 import Courses from "../../assets/images/13.png"
 import { getAuthUser } from '../../helpers/functions'
+import { Link } from 'react-router-dom'
 
 const Leftbar = () => {
   const user = getAuthUser();
@@ -21,29 +22,40 @@ const Leftbar = () => {
         <div className="menu">
           
           <div className='user'>
-            <img src={"/upload/"+user.profilePic} alt="person" />
+            <Link to={`/profile/${user.id}`} style={{textDecoration:"none", color: "black", display:"flex", alignItems:'center', justifyContent:'center', gap:"8px", fontWeight:"bold" }}>
+            {/* <img src={"/upload/"+user.profilePic} alt="person" /> */}
+            <img src='https://cdn-icons-png.flaticon.com/512/2424/2424317.png' alt="koala" />
             <span>{user.username}</span>
+            </Link>
           </div>
           <div className="item">
             <img src={Friends} alt="friends icon" />
             <span>Friends</span>
           </div>
+          <Link to={"/users"} style={{textDecoration:"none", color: "black"}}>
           <div className="item">
             <img src={Groups} alt="groups icon" />
-            <span>Groups</span>
+            <span>Users</span>
           </div>
+          </Link>
+          <Link to={'/games'} style={{textDecoration:"none", color: "black"}}>
           <div className="item">
+            <img src={Games} alt="games icon" />
+            <span>Games</span>
+          </div>
+          </Link>
+          {/* <div className="item">
             <img src={MarketPlace} alt="marketplace icon" />
             <span>Groups</span>
-          </div>
-          <div className="item">
+          </div> */}
+          {/* <div className="item">
             <img src={Watch} alt="watch icon" />
             <span>Watch</span>
-          </div>
-          <div className="item">
+          </div> */}
+          {/* <div className="item">
             <img src={Memories} alt="memories icon" />
             <span>Memories</span>
-          </div>
+          </div> */}
         </div>
         <hr></hr>
         <div className="menu">
@@ -51,10 +63,6 @@ const Leftbar = () => {
           <div className="item">
             <img src={Events} alt="events icon" />
             <span>Events</span>
-          </div>
-          <div className="item">
-            <img src={Games} alt="games icon" />
-            <span>Games</span>
           </div>
           <div className="item">
             <img src={Gallery} alt="gallery icon" />

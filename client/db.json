@@ -13,30 +13,6 @@
           "user": null
         }
       ]
-    },
-    {
-      "name": "c",
-      "price": "8",
-      "description": "b",
-      "type": "78",
-      "image": "78",
-      "id": 6
-    },
-    {
-      "name": "cs",
-      "price": "03",
-      "description": "cs",
-      "type": "csc",
-      "image": "sc",
-      "id": 7
-    },
-    {
-      "name": "csc",
-      "price": "0e33",
-      "description": "wdd",
-      "type": "wdww",
-      "image": "dwd",
-      "id": 8
     }
   ]
 }

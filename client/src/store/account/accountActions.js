@@ -1,26 +1,23 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { ACCOUNT_API } from "../../helpers/consts";
 import axios from "axios";
 
 export const registerAccount = createAsyncThunk(
   "account/registerAccount",
-  async ({ user, navigate }) => {
-    const accountData = new FormData();
-    accountData.append("username", user.username);
-    accountData.append("password", user.password);
-    const res = await axios.post(`${ACCOUNT_API}/register/`, accountData);
-    console.log(res);
-    return { navigate };
+  async (body) => {
+    await axios.post("http://localhost:8888/api/auth/register", body);
   }
 );
 
-export const loginAccount = createAsyncThunk(
+export const loginAcoount = createAsyncThunk(
   "account/loginAccount",
   async ({ user, navigate }) => {
-    const accountData = new FormData();
-    accountData.append("username", user.username);
-    accountData.append("password", user.password);
-    const { data } = await axios.post(`${ACCOUNT_API}/api/token/`, accountData);
-    return { data, navigate, user: user.username };
+    const { data } = await axios.post(
+      "http://localhost:8888/api/auth/login",
+      user,
+      {
+        withCredentials: true,
+      }
+    );
+    return { data, navigate };
   }
 );

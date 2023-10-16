@@ -11,42 +11,19 @@ import Videos from "../../assets/images/9.png";
 import Messages from "../../assets/images/10.png";
 import Tutorials from "../../assets/images/12.png";
 import Courses from "../../assets/images/13.png";
-import { checkUserLogin, getAuthUser, logout, updateToken } from "../../helpers/function";
-import { useEffect } from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { getAuthUser } from "../../helpers/functions";
+import { useNavigate } from "react-router-dom";
 
 const Leftbar = () => {
+  const user = getAuthUser();
   const navigate = useNavigate();
-  const userName = getAuthUser()
-
-  useEffect(() => {
-    updateToken();
-  }, []);
-
-
-
   return (
     <div className="leftBar">
       <div className="container">
         <div className="menu">
           <div className="user">
-            <img
-              src="https://www.wilsoncenter.org/sites/default/files/media/images/person/james-person-1.jpg"
-              alt="person"
-            />
-          <span>{userName}</span>
-            {checkUserLogin() ? (
-              <button
-                onClick={() => {
-                  logout();
-                  navigate('/')
-                }}
-              >
-                Logout
-              </button>
-            ) : (
-              <button onClick={() => navigate("/register")}>Register</button>
-            )}
+            <img src={"/upload/" + user.profilePic} alt="person" />
+            <span>{user.username}cs</span>
           </div>
           <div className="item">
             <img src={Friends} alt="friends icon" />

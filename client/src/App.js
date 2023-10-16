@@ -12,26 +12,28 @@ import Leftbar from "./components/leftbar/Leftbar";
 import Profile from "./pages/profile/Profile";
 import Home from "./pages/home/Home";
 import Rightbar from "./components/rightbar/Rightbar";
-import CartPage from "./pages/CartPage/CartPage";
-import Games from "./components/leftbar/games/Games";
-import AddCard from "./components/leftbar/games/crud/AddCard";
-import EditCard from "./components/leftbar/games/crud/EditCard";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { getAuthUser } from "./helpers/functions";
 
 function App() {
-  const currentUser = false;
+  const currentUser = getAuthUser();
+
+  const queryClient = new QueryClient();
   const Layout = () => {
     return (
-      <div>
-        <Navbar />
-        <div style={{ display: "flex" }}>
-          <Leftbar />
-          <div style={{ flex: 6 }}>
-            <Outlet />
-          </div>
+      <QueryClientProvider client={queryClient}>
+        <div>
+          <Navbar />
+          <div style={{ display: "flex" }}>
+            <Leftbar />
+            <div style={{ flex: 6 }}>
+              <Outlet />
+            </div>
 
-          <Rightbar />
+            <Rightbar />
+          </div>
         </div>
-      </div>
+      </QueryClientProvider>
     );
   };
 
@@ -45,7 +47,11 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Layout />,
+      element: (
+        <ProtectedRoute>
+          <Layout />
+        </ProtectedRoute>
+      ),
       children: [
         {
           path: "/",
@@ -54,22 +60,6 @@ function App() {
         {
           path: "/profile/:id",
           element: <Profile />,
-        },
-        {
-          path: "/cart",
-          element: <CartPage />,
-        },
-        {
-          path: "/games",
-          element: <Games />,
-        },
-        {
-          path: "/addcard",
-          element: <AddCard />,
-        },
-        {
-          path: "/edit/:id",
-          element: <EditCard />,
         },
       ],
     },

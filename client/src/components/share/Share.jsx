@@ -138,7 +138,8 @@ const Share = () => {
       <div className="container">
         <div className="top">
           <div className="left">
-            <img src={"/upload/" + currentUser.profilePic} alt="" />
+            {/* <img src={"/upload/" + currentUser.profilePic} alt="" /> */}
+            <img src='https://cdn2.iconfinder.com/data/icons/animals-nature-2/50/1F428-koala-512.png' alt='koala' />
             <input
               type="text"
               placeholder={`What's on your mind ${currentUser.name}?`}

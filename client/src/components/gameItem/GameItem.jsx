@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import GameLike from '../gameLike/GameLike'
 import { useNavigate } from 'react-router-dom';
 import { checkUserLogin, getAuthUser } from '../../helpers/functions';
+import StarBorderIcon from '@mui/icons-material/StarBorder';
+import GamesFavorite from '../gamesFav/GamesFavorite';
+import GameLike from '../gameLike/GameLike';
 
 const GameItem = ({game}) => {
     const [isLikedGame, setIsLikedGame] = useState(false);
@@ -35,6 +37,7 @@ const GameItem = ({game}) => {
                     <h3 className='cardName'>{game.name}</h3>
                     {/* <p className='cardDesc'>{item.description}</p> */}
                 </div>
+                <div style={{display: "flex"}}>
                 <div>
                     {checkUserLogin() && (
                         <GameLike isLikedGame={isLikedGame} likes={game.likes} gameId={game.id} />
@@ -45,6 +48,8 @@ const GameItem = ({game}) => {
                         <span>0</span>
                     )}
                 </div>
+                           <GamesFavorite game={game} key={game.id}/>
+                                           </div>
             </article>
         </div>
     )

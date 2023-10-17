@@ -16,6 +16,8 @@ import GameCreate from './components/gameCreate/GameCreate';
 import GameEdit from './components/gameEdit/GameEdit';
 import Cart from './components/cart/Cart';
 import Friends from './components/friends/Friends';
+import Pay from './components/gamepay/Pay';
+import FavoritList from './components/favorite/FavoritList';
 
 function App() {
   const currentUser = getAuthUser();
@@ -90,6 +92,14 @@ function App() {
       {
         path: '/friends',
         element: <Friends />
+      },
+      {
+        path: '/pay',
+        element: <Pay />
+      },
+      {
+        path: '/favorites-list',
+        element: <FavoritList />
       }
     ]
     },
@@ -101,6 +111,7 @@ function App() {
       path: '/register',
       element: <Register />
     }
+    
   ])
   return (
     <div className="App">

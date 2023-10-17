@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from 'axios';
-import {GAMES_API} from "../../helpers/consts";
+import {GAMES_API, FAVORITES_API} from "../../helpers/consts";
 import { getAuthUser, getTotalPages } from "../../helpers/functions";
 
 export const getGames = createAsyncThunk(
@@ -56,6 +56,7 @@ export const getCategories = createAsyncThunk(
             categories.push(i);
         };
         return categories;
+
     }
 );
 
@@ -86,3 +87,39 @@ export const toggleGameLike = createAsyncThunk(
         dispatch(getGames());
     }
 );
+export const saveChanges = createAsyncThunk(
+    '/games/saveChanges',
+    async(updatedGameObj, {dispatch}) =>{
+        await axios.patch(`${GAMES_API}/${updatedGameObj.id}`, updatedGameObj);
+        await axios.patch(`${FAVORITES_API}/favorite-${updatedGameObj.id}`, {
+            name: updatedGameObj
+        })
+        dispatch(getGames())
+    }
+
+)
+export const addToFavorites = createAsyncThunk(
+    'games/addToFavorites',
+    async(updatedGameObj, {dispatch})=>{
+        if(updatedGameObj.favorites){
+            const favoriteObj = {
+                id: `favorite-${updatedGameObj.id}`,
+                game: updatedGameObj
+            };
+            await axios.post(FAVORITES_API, favoriteObj)
+        }else{
+            await axios.delete(`${FAVORITES_API}/favorite-${updatedGameObj.id}`)
+        };
+        await dispatch(saveChanges(updatedGameObj))
+        dispatch(getFavorites())
+        dispatch(getGames())
+    }
+)
+
+export const getFavorites = createAsyncThunk(
+    'users/getFavorites',
+    async()=>{
+        const {data} = await axios.get(FAVORITES_API);
+        return data;
+    }
+)

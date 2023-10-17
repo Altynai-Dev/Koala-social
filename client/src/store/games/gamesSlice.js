@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getCategories, getGames, getOneGame } from "./gamesActions";
+import { getCategories, getFavorites, getGames, getOneGame } from "./gamesActions";
 
 const gamesSlice = createSlice({
     name: "games",
@@ -11,7 +11,8 @@ const gamesSlice = createSlice({
         totalPages: 1,
         currentCategory: '',
         search: '',
-        categories: []
+        categories: [],
+        favorites:[]
     },
     reducers: {
         clearOneGameState: (state)=>{
@@ -41,6 +42,7 @@ const gamesSlice = createSlice({
         .addCase(getGames.fulfilled, (state, action)=>{
             state.loading = false;
             state.games = action.payload.data;
+            state.totalPages = action.payload.totalPages;
         })
         .addCase(getGames.rejected, (state)=>{
             state.loading = false;
@@ -57,8 +59,14 @@ const gamesSlice = createSlice({
         })
         .addCase(getCategories.fulfilled, (state, action) => {
             state.categories = action.payload;
+        }).addCase(getFavorites.fulfilled, (state,action ) => {
+            state.favorites = action.payload
         })
     }
 })
-export const {clearOneGameState, changePage, setSearchVal, changeCategory} = gamesSlice.actions;
+export const {
+    clearOneGameState, 
+    changePage, 
+    setSearchVal, 
+    changeCategory} = gamesSlice.actions;
 export default gamesSlice.reducer;

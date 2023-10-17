@@ -22,7 +22,7 @@ const RightBar = () => {
             <span>{user.name}</span>
           </div>
           <div className="buttons">
-            <button>follow</button>
+            <button >follow</button>
             <button>dismiss</button>
           </div>
         </div>

@@ -2,23 +2,22 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { createComment } from "../../store/comments/commentsActions";
 import { getAuthUser } from "../../helpers/functions";
-
-const CommentCreate = ({ product }) => {
+import "./commCreate.scss"
+const CommentCreate = ({ game }) => {
   const [comment, setComment] = useState({
     commentContent: ''
   });
   const dispatch = useDispatch();
-
+  const user = getAuthUser();
   const addComment = () => {
     if(!comment.commentContent.trim()) return alert('Change input values');
 
     const commentObj = {
       id: Date.now(),
       body: comment.commentContent,
-      user: getAuthUser()
+      user: user.username
     };
-
-    dispatch(createComment({ productObj: product, commentObj }));
+    dispatch(createComment({ gameObj: game, commentObj }));
 
     setComment({
       commentContent: ''
@@ -31,6 +30,7 @@ const CommentCreate = ({ product }) => {
       <fieldset>
         <div>
           <input
+          className="create"
             onChange={(e) => setComment({ ...comment, commentContent: e.target.value })}
             value={comment.commentContent}
             type="text"
@@ -38,7 +38,8 @@ const CommentCreate = ({ product }) => {
           />
 
           <button
-            onClick={() => {
+          style={{width:"100px", height:"30px", borderRadius:"5px", marginLeft:"4px", background:"#5271ff"}}
+          onClick={() => {
               addComment();
             }}
           >

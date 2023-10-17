@@ -11,7 +11,7 @@ import { checkUserLogin, getAuthUser, isAdminFunction, logout } from '../../help
 import LogoutIcon from '@mui/icons-material/Logout';
 import LoginIcon from '@mui/icons-material/Login';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-
+import StarBorderPurple500Icon from '@mui/icons-material/StarBorderPurple500';
 
 const Navbar = () => {
   const user = getAuthUser();
@@ -41,6 +41,7 @@ const Navbar = () => {
             {/* <Person2OutlinedIcon />
             <EmailOutlinedIcon />
             <NotificationsOutlinedIcon /> */}
+            <StarBorderPurple500Icon onClick={()=>navigate('/favorites-list')} fontSize='large'/>
             <ShoppingCartIcon onClick={()=>navigate('/cart')} style={{cursor: 'pointer'}} />
             {isAdminFunction() && <button onClick={()=>navigate('/create-card')} className='createBtn'>Create card</button>}
             <div className='user'>

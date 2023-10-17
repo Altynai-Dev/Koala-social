@@ -1,4 +1,4 @@
-// @import "../../style.scss";
+@import "../../style.scss";
 
 .rightBar {
   //@include themify($themes) {
@@ -9,12 +9,12 @@
     overflow: scroll;
     background-color: themed("bgSoft");
 
-    // @include mobile{
-    //   display: none;
-    // }
-    // @include tablet{
-    //   display: none;
-    // }
+    @include mobile{
+      display: none;
+    }
+    @include tablet{
+      display: none;
+    }
 
     &::-webkit-scrollbar {
       display: none;

@@ -1,9 +1,17 @@
+@import "../../style.scss";
+
 .gameDetailsContainer{
     margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     .gameDetails{
+    @include mobile{
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
         display: flex;
         align-items: center;
         justify-content: center;
@@ -14,6 +22,10 @@
         border-radius: 20px;
         padding: 10px;
         height: 350px;
+       
+           
+        
+     
 
         .left{
             flex:1;
@@ -21,10 +33,30 @@
             .gameImg{
                 width: 370px;
                 object-fit: cover;
+                @include mobile{
+                    width: 170px;
+                }
             }
         }
+        
         .right{
             flex: 1;
         }
+        .btnconts{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            .btns{
+                width: 70px;
+                height: 30px;
+                border: none;
+                border-radius: 5px;
+                background: #5271ff;;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+                
+            }
+        }   
     }
 }

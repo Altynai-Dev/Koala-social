@@ -45,6 +45,9 @@
                     }
                 }
             }
+            @include mobile {
+                margin-right: 35px;
+            }
         }
 
         .content {

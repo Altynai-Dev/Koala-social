@@ -8,9 +8,9 @@ import Posts from "../../components/posts/Posts";
 import { useQuery, useQueryClient, useMutation } from "@tanstack/react-query";
 import { makeRequest } from "../../axios";
 import { useLocation } from "react-router-dom";
-import Update from "../../components/update/Update";
 import { useState } from "react";
 import { getAuthUser } from "../../helpers/functions";
+import Update from "../../components/update/Update";
 
 const Profile = () => {
   const [openUpdate, setOpenUpdate] = useState(false);

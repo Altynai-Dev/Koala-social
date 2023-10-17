@@ -2,32 +2,461 @@
   "games": [
     {
       "id": "1",
-      "name": "d",
+      "name": "Mario",
       "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/software/switch/70010000068688/a13441a9532b1c9e90f657ee1c67255de073707543ff6735ceb57b472faec691",
       "price": "59.99",
-      "description": "Mario and friends have been invited to visit the colorful Flower Kingdom, just a short hop away from the Mushroom Kingdom. Unfortunately, King Bowser has transformed into a flying castle and is causing chaos across their peaceful land. Now our heroes must save the day—and the Flower Kingdom—in this wonderous new adventure!"
+      "description": "Mario and friends have been invited to visit the colorful Flower Kingdom, just a short hop away from the Mushroom Kingdom. Unfortunately, King Bowser has transformed into a flying castle and is causing chaos across their peaceful land. Now our heroes must save the day—and the Flower Kingdom—in this wonderous new adventure!",
+      "type": "Mario",
+      "likes": [
+        {
+          "id": 1697557251380,
+          "user": {
+            "id": 17,
+            "username": "admin",
+            "email": "admin@gmail.com",
+            "name": "admin",
+            "coverPic": null,
+            "profilePic": null,
+            "city": null
+          }
+        }
+      ]
     },
     {
       "id": "2",
       "name": "Super Mario RPG™",
       "img": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/software/switch/70010000068683/fe4afe940b0e707798332e86f0af56cdbde48da59dc37cdfb8d59febb88ac72a",
       "price": "59.99",
-      "description": "Team up with an oddball group of heroes to save Star Road and stop the troublemaking Smithy Gang. This colorful RPG has updated graphics and cinematics that add even more charm to the unexpected alliance between Mario, Bowser, Peach, and original characters Mallow and Geno. Enter (or revisit) this world of eccentric allies and offbeat enemies in an RPG for everyone."
+      "description": "Team up with an oddball group of heroes to save Star Road and stop the troublemaking Smithy Gang. This colorful RPG has updated graphics and cinematics that add even more charm to the unexpected alliance between Mario, Bowser, Peach, and original characters Mallow and Geno. Enter (or revisit) this world of eccentric allies and offbeat enemies in an RPG for everyone.",
+      "type": "Mario",
+      "likes": []
     },
     {
       "id": "3",
       "name": "Princess Peach™: Showtime!",
       "img": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/software/switch/70010000005022/cd94b037b282fc3415f980bb31e41de61200235dfc7b1532ffc512280fed0bb1",
       "price": "59.99",
-      "description": "Princess Peach’s trip to the Sparkle Theater goes off script when the wicked Grape and the Sour Bunch steal the show! Partner with the theater’s guardian, Stella, to call curtains on this tragedy by using a powerful ribbon and taking on several starring roles—each with their own look and abilities."
+      "description": "Princess Peach’s trip to the Sparkle Theater goes off script when the wicked Grape and the Sour Bunch steal the show! Partner with the theater’s guardian, Stella, to call curtains on this tragedy by using a powerful ribbon and taking on several starring roles—each with their own look and abilities.",
+      "type": "Princess",
+      "likes": [
+        {
+          "id": 1697553131376,
+          "user": {
+            "id": 17,
+            "username": "admin",
+            "email": "admin@gmail.com",
+            "name": "admin",
+            "coverPic": null,
+            "profilePic": null,
+            "city": null
+          }
+        }
+      ]
     },
     {
       "id": "4",
       "name": "Mario vs. Donkey Kong™",
       "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/software/switch/70010000072191/e03f8a5738ba0876eb1f3d0e359c554031f67e0d90f663a8d536499d40ebdd72",
       "price": "49.99",
-      "description": "Run, jump, and backflip your way to rescuing the stolen Mini-Mario toys in this puzzling twist on Mario action. Obstacles like spikes, moving platforms, and falling bricks stand in your way—put your brain to work and figure out the best way to reach the Mini-Marios. The rivalry that originally heated up on the Game Boy™ Advance system reignites on the Nintendo Switch™ system with newly-added co-op play and updated visuals."
+      "description": "Run, jump, and backflip your way to rescuing the stolen Mini-Mario toys in this puzzling twist on Mario action. Obstacles like spikes, moving platforms, and falling bricks stand in your way—put your brain to work and figure out the best way to reach the Mini-Marios. The rivalry that originally heated up on the Game Boy™ Advance system reignites on the Nintendo Switch™ system with newly-added co-op play and updated visuals.",
+      "type": "Mario",
+      "likes": [
+        {
+          "id": 1697549240653,
+          "user": {
+            "id": 17,
+            "username": "admin",
+            "email": "admin@gmail.com",
+            "name": "admin",
+            "coverPic": null,
+            "profilePic": null,
+            "city": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "WarioWare™: Move It!",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000068678/5b072b55e8a6993071b4cde9f74d9cf7aeac0b52141177efed6c8ce9b580a435",
+      "price": "49.99",
+      "description": "Grab a pair of Joy-Con™ controllers and get moving as you gently shake, punch, dance, wiggle, and even curtsey through over 200 lightning-fast microgames (minigames that last just a few hilarious seconds). Chop bamboo, break out of jail, return a curtsey, and more as you master some really ridiculous moves.",
+      "type": "wario",
+      "likes": [
+        {
+          "id": 1697554047320,
+          "user": {
+            "id": 17,
+            "username": "admin",
+            "email": "admin@gmail.com",
+            "name": "admin",
+            "coverPic": null,
+            "profilePic": null,
+            "city": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Detective Pikachu™ Returns",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000068693/c4b5a71815eb1817733a82d6228a624751f8f4a3fbc6c3a4f69f81be1e114454",
+      "price": "49.99",
+      "description": "Solve mysteries with Detective Pikachu Unravel a series of mysteries across Ryme City with a tough-talking, coffee-loving Pikachu and his human partner, Tim Goodman. When a jewel theft occurs, the case sets this great detective duo down a path filled with mystery. Why did Tim’s father, Harry, go missing? What is causing the Pokémon-related incidents around Ryme City? Answer these questions and more by searching for clues, investigating scenes, and using your case notebook to make deductions.",
+      "type": "pokemon",
+      "likes": [
+        {
+          "id": 1697554165133,
+          "user": {
+            "id": 17,
+            "username": "admin",
+            "email": "admin@gmail.com",
+            "name": "admin",
+            "coverPic": null,
+            "profilePic": null,
+            "city": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Pikmin™ 4",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000005308/cf3ddc441a4d89c4edbfc475d2084e046e56bf90fc660b77455bb808d3a0467a",
+      "price": "59.99",
+      "description": "Guide pint-sized creatures in an endearing expedition!  Meet Pikmin: small, plantlike creatures with distinct abilities that you can grow, pluck, guide, and overpower enemies with! Use your Pikmin’s miniature might (and a bit of strategy) to explore this mysterious planet in search of your crew—and treasure.",
+      "type": "Pikmin",
+      "likes": [
+        {
+          "id": 1697556311494,
+          "user": {
+            "id": 17,
+            "username": "admin",
+            "email": "admin@gmail.com",
+            "name": "admin",
+            "coverPic": null,
+            "profilePic": null,
+            "city": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Kirby’s Return to Dream Land™ Deluxe",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000058797/f37d3c4f766c56db53734e7b74328b66d2a1d9cf37257dcc623435862b145bad",
+      "price": "59.99",
+      "description": "An adventure of deluxe proportions awaits! The tough puff Kirby is back for a 1-4 player* platforming adventure across Planet Popstar. Help Magolor rebuild his ship with newly added Mecha and Sand Copy Abilities! Float and fight along with friends on the same system as you control Kirby. Each other player can control a different Kirby or one of Kirby’s iconic friends like King Dedede, Meta Knight, and Bandana Waddle Dee.",
+      "type": "kirby",
+      "likes": [
+        {
+          "id": 1697556695569,
+          "user": {
+            "id": 17,
+            "username": "admin",
+            "email": "admin@gmail.com",
+            "name": "admin",
+            "coverPic": null,
+            "profilePic": null,
+            "city": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Kirby’s Dream Buffet™",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/en_US/games/switch/k/kirbys-dream-buffet-switch/hero",
+      "price": "14.99",
+      "description": "Bump, battle, and boost your way to sweet victory Have a feast of fun with family and friends in Kirby’s Dream Buffet™ for the Nintendo Switch family of systems.  Roll through a smorgasbord of food-themed stages in delicious 4-player competition as a rounder-than-usual Kirby. Anyone can take the cake in Kirby’s Dream Buffet! This digital game is available exclusively for Nintendo Switch.",
+      "type": "kirby",
+      "likes": [
+        {
+          "id": 1697556303593,
+          "user": {
+            "id": 17,
+            "username": "admin",
+            "email": "admin@gmail.com",
+            "name": "admin",
+            "coverPic": null,
+            "profilePic": null,
+            "city": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Sonic Origins",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000045649/bf9665c0d3f4f99954d8faa8f426e63a1e3cd1eec297b4f10d5954d9d188b199",
+      "price": "29.99",
+      "description": "Classic Sonic Re-Defined Explore the classic Sonic titles in high-resolution, with all-new opening and ending animations for each title!",
+      "type": "sonic",
+      "likes": [
+        {
+          "id": 1697556379606,
+          "user": {
+            "id": 17,
+            "username": "admin",
+            "email": "admin@gmail.com",
+            "name": "admin",
+            "coverPic": null,
+            "profilePic": null,
+            "city": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Pokémon™ Scarlet",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000053966/849c234de8df7265201d26d9d72f88eed3f32438d3dca12fc135beb4c3befc85",
+      "price": "59.99",
+      "description": "Welcome to the wide-open world of the Paldea region Catch, battle, and train Pokémon in the Paldea Region, a vast land filled with lakes, towering peaks, wastelands, small towns, and sprawling cities. Explore a wide-open world at your own pace and traverse land, water, and air by riding on a form-shifting Legendary Pokémon—Koraidon in the Pokémon Scarlet game and Miraidon in the Pokémon Violet game. Choose either Sprigatito, Fuecoco, or Quaxly, to be your first partner Pokémon before setting off on your journey through Paldea.",
+      "type": "pokemon",
+      "likes": [
+        {
+          "id": 1697556668297,
+          "user": {
+            "id": 17,
+            "username": "admin",
+            "email": "admin@gmail.com",
+            "name": "admin",
+            "coverPic": null,
+            "profilePic": null,
+            "city": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Pokémon™ Violet",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000053971/842b2784d91520d41a947dec17fac116fec889bb1f1db4023615af8429dae00d",
+      "price": "59.99",
+      "description": "Welcome to the wide-open world of the Paldea region. Catch, battle, and train Pokémon in the Paldea Region, a vast land filled with lakes, towering peaks, wastelands, small towns, and sprawling cities. Explore a wide-open world at your own pace and traverse land, water, and air by riding on a form-shifting Legendary Pokémon—Koraidon in the Pokémon Scarlet game and Miraidon in the Pokémon Violet game. Choose either Sprigatito, Fuecoco, or Quaxly, to be your first partner Pokémon before setting off on your journey through Paldea.",
+      "type": "pokemon"
+    },
+    {
+      "id": "13",
+      "name": "Fall Guys",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000042975/9aef10639dd9ed52d474d26581f335c98ca723fc1c2c833a6a05a960d384d28c",
+      "price": "2.99",
+      "description": "Fall Guys is a free, cross-platform massively multiplayer party royale game. Clumsily compete in absurd obstacle courses with friends or build your very own chaotic course to share with the community.",
+      "type": "royale"
+    },
+    {
+      "id": "14",
+      "name": "Yoshi’s Crafted World™",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000000734/db8a252a84301594bdc4eed1be3dbd8d3de5086bc79f6ee1f8060c9a5630101f",
+      "price": "39.99",
+      "description": "Get crafty with Yoshi in a handicraft world. Jump into a new Yoshi adventure in a world made of everyday objects—like boxes and paper cups! As Yoshi, you’ll leap up high, gulp down enemies, and set out on a treasure hunt to find all the different collectables. On the flip side, stages can be played backwards, providing new perspectives to explore and new ways to locate some of the more craftily hidden items! It all started when Kamek and Baby Bowser set out to steal a gem-set stone. Legend has it that this fabled artifact can grant the bearer their wildest dreams! But when the artifact’s gems are sent flying, it falls upon Yoshi and friends to find them. Luckily, saving the day can be cooperative and",
+      "type": "craft"
+    },
+    {
+      "id": "15",
+      "name": "Cuphead",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000016330/d94d2186ef03c930392253c83c84af0c73b7e57cd902a526b09b4155a25930fe",
+      "price": "19.99",
+      "description": "The all-cartoon Magical Wondergame!",
+      "type": "magic"
+    },
+    {
+      "id": "16",
+      "name": "DC Super Hero Girls™: Teen Power",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000038627/fd01419b9fae2278e037e4c8852821dbcbd95b647e2970fdd926a6f00e76c69c",
+      "price": "59.99",
+      "description": "Suit up as the DC Super Hero Girls and save Metropolis! Join the fight as Wonder Woman, Supergirl, and Batgirl from the animated series DC Super Hero Girls, and save Metropolis from the tinkering terror of Toyman! With the city in danger, even frenemies like Harley Quinn, Catwoman, and Star Sapphire will need to band together to help protect the town. Each Super Hero and Super-Villain has a unique set of abilities: for example, Wonder Woman uses her warrior skills with the Lasso of Truth and Flying Shield while Harley Quinn wields her Pop Roulette blaster that fires off mischievous effects to do both a little good and a little bad at the same time. Freely explore the city as teenagers",
+      "type": "girls"
+    },
+    {
+      "id": "17",
+      "name": "Among Us",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000036098/758ab0b61205081da2466386940752c70e0e5ea43bd39e8b9b13eaa455c69b7e",
+      "price": "5.00",
+      "description": "An online and local party game of teamwork and betrayal for 4-15 players...in space! Play with 4-15 players online or via local WiFi as you attempt to prepare your spaceship for departure, but beware as one or more random players among the Crew are Impostors bent on killing everyone!",
+      "type": "among us"
+    },
+    {
+      "id": "18",
+      "name": "Cult of the Lamb",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000047973/b0ed3b74bf5e3de3d5b0a5bc9eddcb5312c82c59d5af9952bc42e3b5e43ce99a",
+      "price": "2.99",
+      "description": "Cult of the Lamb casts players in the role of a possessed lamb saved from annihilation by an ominous stranger, and must repay their debt by building a loyal following in his name.",
+      "type": "others"
+    },
+    {
+      "id": "19",
+      "name": "Hades",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000033131/dbc8c55a21688b446a5c57711b726956483a14ef8c5ddb861f897c0595ccb6b5",
+      "price": "24.99",
+      "description": "Defy the god of the dead as you hack and slash out of the Underworld in this rogue-like dungeon crawler from the creators of Bastion and Transistor.",
+      "type": "others"
+    },
+    {
+      "id": "20",
+      "name": "Persona 5 Tactica",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000066005/82111f4c361948a56afa01658171015ef2ce31dd4bbf6963f7854f19254f6d0f",
+      "price": "59.99",
+      "description": "Ignite your heart— An emotional uprising begins! Ignite your heart— An emotional uprising begins!",
+      "type": "others"
+    },
+    {
+      "id": "21",
+      "name": "The Legend of Zelda™: Breath of the Wild",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000000025/7137262b5a64d921e193653f8aa0b722925abc5680380ca0e18a5cfd91697f58",
+      "price": "59.99",
+      "description": "STEP INTO A WORLD OF ADVENTURE. Forget everything you know about The Legend of Zelda games. Step into a world of discovery, exploration, and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking new game in the acclaimed series.",
+      "type": "others"
+    },
+    {
+      "id": "22",
+      "name": "TRIANGLE STRATEGY™",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000046322/04f31c9d76358ba44aaa48c279826ef9799a5d27168e1368d32e96fdd83c95c6",
+      "price": "59.99",
+      "description": "Your decisions make the difference Command a group of units as Serenoa, heir of House Wolffort, in a tangled plot where key choices you make will influence the story. The stunning HD-2D visual style blends 3D environments and modern effects with pixel-art characters and details.",
+      "type": "others"
+    },
+    {
+      "id": "23",
+      "name": "Apex Legends™",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000024591/35b92393b649ecc5c6b399d07d9b3e947b70fd3937d0d90b4eee49949bd095ae",
+      "price": "59.99",
+      "description": "Welcome to the next evolution of Hero Shooter. Contains in-game purchases. Conquer with character in Apex Legends, a free-to-play* Hero shooter where legendary characters with powerful abilities team up to battle for fame & fortune on the fringes of the Frontier.",
+      "type": "others"
+    },
+    {
+      "id": "24",
+      "name": "It Takes Two",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/en_US/games/switch/i/it-takes-two-switch/hero",
+      "price": "39.99",
+      "description": "We're Better Together. Embark on the craziest journey of your life in It Takes Two, a genre-bending platform adventure created purely for co-op. Invite a friend to join for free with Friend’s Pass* and work together across a huge variety of gleefully disruptive gameplay challenges.",
+      "type": "others"
+    },
+    {
+      "id": "25",
+      "name": "STAR WARS™: The Force Unleashed™",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/en_US/games/switch/s/star-wars-the-force-unleashed-switch/hero",
+      "price": "19.99",
+      "description": "Unleash the power of the Force! You are Starkiller, Darth Vader’s secret apprentice, who has been trained to hunt down and destroy the Jedi. Take advantage of devastating Force powers and lightsaber combos to do Darth Vader’s bidding. Similar to the 2008 release on the Nintendo Wii™, use the Nintendo Joy-Con motion controls to truly feel the destructive power of the Force or challenge a friend to a 1v1 in the local multiplayer Duel mode!",
+      "type": "star wars"
     }
-  ], 
-  "orders":[]
+  ],
+  "orders": [
+    {
+      "user": {
+        "id": 17,
+        "username": "admin",
+        "email": "admin@gmail.com",
+        "name": "admin",
+        "coverPic": null,
+        "profilePic": null,
+        "city": null
+      },
+      "totalCost": 359.94,
+      "games": [
+        {
+          "count": 3,
+          "totalPrice": 179.97,
+          "gameItem": {
+            "id": "1",
+            "name": "d",
+            "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/software/switch/70010000068688/a13441a9532b1c9e90f657ee1c67255de073707543ff6735ceb57b472faec691",
+            "price": "59.99",
+            "description": "Mario and friends have been invited to visit the colorful Flower Kingdom, just a short hop away from the Mushroom Kingdom. Unfortunately, King Bowser has transformed into a flying castle and is causing chaos across their peaceful land. Now our heroes must save the day—and the Flower Kingdom—in this wonderous new adventure!"
+          }
+        },
+        {
+          "count": 3,
+          "totalPrice": 179.97,
+          "gameItem": {
+            "id": "2",
+            "name": "Super Mario RPG™",
+            "img": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/software/switch/70010000068683/fe4afe940b0e707798332e86f0af56cdbde48da59dc37cdfb8d59febb88ac72a",
+            "price": "59.99",
+            "description": "Team up with an oddball group of heroes to save Star Road and stop the troublemaking Smithy Gang. This colorful RPG has updated graphics and cinematics that add even more charm to the unexpected alliance between Mario, Bowser, Peach, and original characters Mallow and Geno. Enter (or revisit) this world of eccentric allies and offbeat enemies in an RPG for everyone."
+          }
+        }
+      ],
+      "id": 1
+    },
+    {
+      "user": {
+        "id": 17,
+        "username": "admin",
+        "email": "admin@gmail.com",
+        "name": "admin",
+        "coverPic": null,
+        "profilePic": null,
+        "city": null
+      },
+      "totalCost": 59.99,
+      "games": [
+        {
+          "count": 1,
+          "totalPrice": 59.99,
+          "gameItem": {
+            "id": "1",
+            "name": "d",
+            "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/software/switch/70010000068688/a13441a9532b1c9e90f657ee1c67255de073707543ff6735ceb57b472faec691",
+            "price": "59.99",
+            "description": "Mario and friends have been invited to visit the colorful Flower Kingdom, just a short hop away from the Mushroom Kingdom. Unfortunately, King Bowser has transformed into a flying castle and is causing chaos across their peaceful land. Now our heroes must save the day—and the Flower Kingdom—in this wonderous new adventure!"
+          }
+        }
+      ],
+      "id": 2
+    },
+    {
+      "user": {
+        "id": 19,
+        "username": "aman",
+        "email": "aman@gmail.com",
+        "name": "Amantur",
+        "coverPic": null,
+        "profilePic": null,
+        "city": null
+      },
+      "totalCost": 59.99,
+      "games": [
+        {
+          "count": 1,
+          "totalPrice": 59.99,
+          "gameItem": {
+            "id": "1",
+            "name": "d",
+            "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/software/switch/70010000068688/a13441a9532b1c9e90f657ee1c67255de073707543ff6735ceb57b472faec691",
+            "price": "59.99",
+            "description": "Mario and friends have been invited to visit the colorful Flower Kingdom, just a short hop away from the Mushroom Kingdom. Unfortunately, King Bowser has transformed into a flying castle and is causing chaos across their peaceful land. Now our heroes must save the day—and the Flower Kingdom—in this wonderous new adventure!"
+          }
+        }
+      ],
+      "id": 3
+    },
+    {
+      "user": {
+        "id": 13,
+        "username": "John",
+        "email": "john@gmail.com",
+        "name": "John Brown",
+        "coverPic": "1697415011988premium_photo-1688891564708-9b2247085923.jpg",
+        "profilePic": "1697415011971beach.jpg",
+        "city": "Miami"
+      },
+      "totalCost": 359.94,
+      "games": [
+        {
+          "count": 6,
+          "totalPrice": 359.94,
+          "gameItem": {
+            "id": "2",
+            "name": "Super Mario RPG™",
+            "img": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/software/switch/70010000068683/fe4afe940b0e707798332e86f0af56cdbde48da59dc37cdfb8d59febb88ac72a",
+            "price": "59.99",
+            "description": "Team up with an oddball group of heroes to save Star Road and stop the troublemaking Smithy Gang. This colorful RPG has updated graphics and cinematics that add even more charm to the unexpected alliance between Mario, Bowser, Peach, and original characters Mallow and Geno. Enter (or revisit) this world of eccentric allies and offbeat enemies in an RPG for everyone."
+          }
+        }
+      ],
+      "id": 4
+    }
+  ]
 }

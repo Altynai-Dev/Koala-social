@@ -7,7 +7,11 @@ import { clearOneGameState } from '../../store/games/gamesSlice';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { checkGameInCart, toggleGameToCart } from '../../store/cart/cartActions';
 import { getCart } from '../../store/cart/cartSlice';
+import RemoveShoppingCartIcon from '@mui/icons-material/RemoveShoppingCart';
+import { isAdminFunction } from '../../helpers/functions';
+
 const GameDetails = () => {
+
 const {loading, oneGame} = useSelector((state)=>state.games);
 const {cart} = useSelector((state)=>state.cart);
 const [isGameInCart, setIsGameInCart] = useState(false);
@@ -40,21 +44,33 @@ useEffect(()=>{
                           <div className='gameDetails'>
                               <div className='left'>
                                   <img src={oneGame.img} alt="game" className='gameImg' />
-                                  <div>
-                                      <button onClick={() => {
-                                          dispatch(deleteGame({ id: oneGame.id }));
-                                          navigate('/games')
-                                      }}>Delete</button>
-                                      <button onClick={() => {
+                                  <div className='btnconts'>
+                                    {isAdminFunction() && 
+                                    <button
+                                    className='btns'
+                                    onClick={() => {
+                                        dispatch(deleteGame({ id: oneGame.id }));
+                                        navigate('/games')
+                                    }}
+                                    style={{backgroundColor:"#f0544f"}}>Delete</button>
+                                    }
+                                    {
+                                        isAdminFunction() && 
+                                        <button
+                                      className='btns'
+                                      onClick={() => {
                                           navigate('/edit-card/' + oneGame.id)
                                       }}>edit</button>
-                                      <button onClick={()=>{
+                                    }
+                                      <button 
+                                      className='btns'
+                                      onClick={()=>{
                                         toggleGameToCart(oneGame);
                                         dispatch(getCart())
                                       }}>
-                                        <AddShoppingCartIcon />
+                                        {/* <AddShoppingCartIcon /> */}
+                                      {isGameInCart ? <RemoveShoppingCartIcon /> : <AddShoppingCartIcon />}
                                       </button>
-                                      {isGameInCart ? "Remove From Cart" : "Add To Cart"}
                                   </div>
                               </div>
                               <div className="right">

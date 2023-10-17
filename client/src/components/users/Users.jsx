@@ -16,7 +16,7 @@ const Users = () => {
               ? "Something went wrong!"
               : isLoading
                   ? "loading"
-                  : data.map((user) => <User user={user} key={user.id} /> )
+                  : data.map((user) => <User user={user} key={user.id} style={{alignItems:"center"}}/> )
           }
       </div>
   )

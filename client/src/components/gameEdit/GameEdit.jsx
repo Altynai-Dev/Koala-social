@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
-import { editGame, getOneGame } from "../../store/games/gamesActions";
+import { editGame, getOneGame, getCategories } from "../../store/games/gamesActions";
 import { clearOneGameState } from "../../store/games/gamesSlice";
-
+import "./GameEdit.scss"
 const GameEdit = () => {
-  const { loading, oneGame } = useSelector((state) => state.games);
+  const { loading, oneGame, categories } = useSelector((state) => state.games);
   const [game, setGame] = useState(oneGame);
   const { id } = useParams();
   const dispatch = useDispatch();
@@ -14,7 +14,7 @@ const GameEdit = () => {
  
   useEffect(() => {
     dispatch(getOneGame({ id }));
-    // dispatch(getCategories());
+    dispatch(getCategories());
     return () => dispatch(clearOneGameState());
   }, []);
 
@@ -31,7 +31,7 @@ const GameEdit = () => {
       ) : (
         <>
           {game && (
-            <div>
+            <div className="editInps">
               <h2>Edit Form</h2>
               <input
                 type="text"
@@ -61,12 +61,12 @@ const GameEdit = () => {
                 value={game.price}
               />
 
-          {/* <select onChange={(e) => setGame({ ...game, type: e.target.value })} value={game.type} className="w-full mb-4 p-3 h-12 border rounded-md">
+          <select onChange={(e) => setGame({ ...game, type: e.target.value })} value={game.type} className="w-full mb-4 p-3 h-12 border rounded-md">
             <option disabled>Choose category</option>
             {categories.map(category => (
               <option key={category} value={category}>{category}</option>
             ))}
-          </select> */}
+          </select>
 
               <div className="flex flex-row w-full">
                 <input

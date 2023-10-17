@@ -87,6 +87,7 @@ const Cart = () => {
                             <button className="orderBtn"
                               onClick={() => {
                                 dispatch(createOrder());
+                                navigate("/pay")
                               }}
                             >
                               Order

@@ -8,7 +8,9 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { checkGameInCart, toggleGameToCart } from '../../store/cart/cartActions';
 import { getCart } from '../../store/cart/cartSlice';
 import RemoveShoppingCartIcon from '@mui/icons-material/RemoveShoppingCart';
-import { isAdminFunction } from '../../helpers/functions';
+import { checkUserLogin, isAdminFunction } from '../../helpers/functions';
+import GameCommentList from "../gameComments/GameCommentsList";
+import CommentCreate from "../gameComments/CommentCreate";
 
 const GameDetails = () => {
 
@@ -40,6 +42,7 @@ useEffect(()=>{
           ) : (
               <>
                   {oneGame && (
+                    <>
                       <div className='gameDetailsContainer'>
                           <div className='gameDetails'>
                               <div className='left'>
@@ -80,6 +83,13 @@ useEffect(()=>{
                               </div>
                           </div>
                       </div>
+                      <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
+
+                      <h2 style={{fontSize:"24px"}}>Comments</h2>
+                      {checkUserLogin() && <CommentCreate game={oneGame} />}
+                      {oneGame.comments ? (<GameCommentList comments={oneGame.comments} key={oneGame.id} />):("No comments yet")}
+                      </div>
+                      </>
                   )}
               </>
           )}

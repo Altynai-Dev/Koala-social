@@ -5,8 +5,8 @@ import { getOneGame } from "../games/gamesActions";
 
 export const createComment = createAsyncThunk(
     'comments/createComment',
-    async ({ productObj, commentObj }, { dispatch }) => {
-        const updatedProductObj = { ...productObj };
+    async ({ gameObj, commentObj }, { dispatch }) => {
+        const updatedProductObj = { ...gameObj };
         const checkCommentKeyInProduct = Object.keys(updatedProductObj).includes('comments');
 
         if(!checkCommentKeyInProduct) {
@@ -15,7 +15,7 @@ export const createComment = createAsyncThunk(
             ];
         } else {
             updatedProductObj.comments = [
-                ...productObj.comments,
+                ...gameObj.comments,
                 commentObj
             ];
         };
@@ -29,11 +29,10 @@ export const createComment = createAsyncThunk(
 export const deleteComment = createAsyncThunk(
     'comments/deleteComment',
     async ({ commentId }, { dispatch, getState }) => {
-        const { oneProduct } = getState().games;
-        const updatedProduct = { ...oneProduct };
+        const { oneGame } = getState().games;
+        const updatedProduct = { ...oneGame };
         updatedProduct.comments = updatedProduct.comments.filter(comment => comment.id !== commentId);
 
-        updatedProduct.rating = getProductRating(updatedProduct);
 
         await axios.patch(`${GAMES_API}/${updatedProduct.id}`, updatedProduct);
 

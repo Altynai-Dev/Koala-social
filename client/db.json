@@ -9,7 +9,7 @@
       "type": "Mario",
       "likes": [
         {
-          "id": 1697557251380,
+          "id": 1697570649779,
           "user": {
             "id": 17,
             "username": "admin",
@@ -20,7 +20,9 @@
             "city": null
           }
         }
-      ]
+      ],
+      "comments": [],
+      "favorites": false
     },
     {
       "id": "2",
@@ -29,7 +31,8 @@
       "price": "59.99",
       "description": "Team up with an oddball group of heroes to save Star Road and stop the troublemaking Smithy Gang. This colorful RPG has updated graphics and cinematics that add even more charm to the unexpected alliance between Mario, Bowser, Peach, and original characters Mallow and Geno. Enter (or revisit) this world of eccentric allies and offbeat enemies in an RPG for everyone.",
       "type": "Mario",
-      "likes": []
+      "likes": [],
+      "favorites": true
     },
     {
       "id": "3",
@@ -51,7 +54,8 @@
             "city": null
           }
         }
-      ]
+      ],
+      "favorites": false
     },
     {
       "id": "4",
@@ -73,7 +77,8 @@
             "city": null
           }
         }
-      ]
+      ],
+      "favorites": false
     },
     {
       "id": "5",
@@ -457,6 +462,118 @@
         }
       ],
       "id": 4
+    },
+    {
+      "user": {
+        "id": 17,
+        "username": "admin",
+        "email": "admin@gmail.com",
+        "name": "admin",
+        "coverPic": null,
+        "profilePic": null,
+        "city": null
+      },
+      "totalCost": 59.99,
+      "games": [
+        {
+          "count": 1,
+          "totalPrice": 59.99,
+          "gameItem": {
+            "id": "1",
+            "name": "Mario",
+            "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/software/switch/70010000068688/a13441a9532b1c9e90f657ee1c67255de073707543ff6735ceb57b472faec691",
+            "price": "59.99",
+            "description": "Mario and friends have been invited to visit the colorful Flower Kingdom, just a short hop away from the Mushroom Kingdom. Unfortunately, King Bowser has transformed into a flying castle and is causing chaos across their peaceful land. Now our heroes must save the day—and the Flower Kingdom—in this wonderous new adventure!",
+            "type": "Mario",
+            "likes": [],
+            "comments": []
+          }
+        }
+      ],
+      "id": 5
+    },
+    {
+      "user": {
+        "id": 17,
+        "username": "admin",
+        "email": "admin@gmail.com",
+        "name": "admin",
+        "coverPic": null,
+        "profilePic": null,
+        "city": null
+      },
+      "totalCost": 59.99,
+      "games": [
+        {
+          "count": 1,
+          "totalPrice": 59.99,
+          "gameItem": {
+            "id": "1",
+            "name": "Mario",
+            "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/software/switch/70010000068688/a13441a9532b1c9e90f657ee1c67255de073707543ff6735ceb57b472faec691",
+            "price": "59.99",
+            "description": "Mario and friends have been invited to visit the colorful Flower Kingdom, just a short hop away from the Mushroom Kingdom. Unfortunately, King Bowser has transformed into a flying castle and is causing chaos across their peaceful land. Now our heroes must save the day—and the Flower Kingdom—in this wonderous new adventure!",
+            "type": "Mario",
+            "likes": [],
+            "comments": []
+          }
+        }
+      ],
+      "id": 6
+    },
+    {
+      "user": {
+        "id": 17,
+        "username": "admin",
+        "email": "admin@gmail.com",
+        "name": "admin",
+        "coverPic": null,
+        "profilePic": null,
+        "city": null
+      },
+      "totalCost": 59.99,
+      "games": [
+        {
+          "count": 1,
+          "totalPrice": 59.99,
+          "gameItem": {
+            "id": "1",
+            "name": "Mario",
+            "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/software/switch/70010000068688/a13441a9532b1c9e90f657ee1c67255de073707543ff6735ceb57b472faec691",
+            "price": "59.99",
+            "description": "Mario and friends have been invited to visit the colorful Flower Kingdom, just a short hop away from the Mushroom Kingdom. Unfortunately, King Bowser has transformed into a flying castle and is causing chaos across their peaceful land. Now our heroes must save the day—and the Flower Kingdom—in this wonderous new adventure!",
+            "type": "Mario",
+            "likes": [],
+            "comments": []
+          }
+        }
+      ],
+      "id": 7
+    }
+  ],
+  "favorites": [
+    {
+      "id": "favorite-2",
+      "game": {
+        "id": "2",
+        "name": "Super Mario RPG™",
+        "img": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/software/switch/70010000068683/fe4afe940b0e707798332e86f0af56cdbde48da59dc37cdfb8d59febb88ac72a",
+        "price": "59.99",
+        "description": "Team up with an oddball group of heroes to save Star Road and stop the troublemaking Smithy Gang. This colorful RPG has updated graphics and cinematics that add even more charm to the unexpected alliance between Mario, Bowser, Peach, and original characters Mallow and Geno. Enter (or revisit) this world of eccentric allies and offbeat enemies in an RPG for everyone.",
+        "type": "Mario",
+        "likes": [],
+        "favorites": true
+      },
+      "name": {
+        "id": "2",
+        "name": "Super Mario RPG™",
+        "img": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/software/switch/70010000068683/fe4afe940b0e707798332e86f0af56cdbde48da59dc37cdfb8d59febb88ac72a",
+        "price": "59.99",
+        "description": "Team up with an oddball group of heroes to save Star Road and stop the troublemaking Smithy Gang. This colorful RPG has updated graphics and cinematics that add even more charm to the unexpected alliance between Mario, Bowser, Peach, and original characters Mallow and Geno. Enter (or revisit) this world of eccentric allies and offbeat enemies in an RPG for everyone.",
+        "type": "Mario",
+        "likes": [],
+        "favorites": true
+      }
     }
   ]
 }

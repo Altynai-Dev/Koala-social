@@ -15,6 +15,7 @@ import GameDetails from './components/gameDetails/GameDetails';
 import GameCreate from './components/gameCreate/GameCreate';
 import GameEdit from './components/gameEdit/GameEdit';
 import Cart from './components/cart/Cart';
+import Friends from './components/friends/Friends';
 
 function App() {
   const currentUser = getAuthUser();
@@ -85,6 +86,10 @@ function App() {
       {
         path: '/cart',
         element: <Cart />
+      },
+      {
+        path: '/friends',
+        element: <Friends />
       }
     ]
     },

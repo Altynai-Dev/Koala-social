@@ -28,10 +28,12 @@ const Leftbar = () => {
             <span>{user.username}</span>
             </Link>
           </div>
+          {/* <Link to={'/friends'} style={{textDecoration:"none", color: "black"}}>
           <div className="item">
             <img src={Friends} alt="friends icon" />
             <span>Friends</span>
           </div>
+          </Link> */}
           <Link to={"/users"} style={{textDecoration:"none", color: "black"}}>
           <div className="item">
             <img src={Groups} alt="groups icon" />

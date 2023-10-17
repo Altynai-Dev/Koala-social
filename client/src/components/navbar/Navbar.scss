@@ -54,7 +54,14 @@
         display: flex;
         align-items: center;
         gap: 30px;
-
+        .createBtn{
+            background-color: rgba(21, 168, 21, 0.87);
+            border: none;
+            padding: 6px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;    
+        }
         @include mobile{
             display: none;
         }

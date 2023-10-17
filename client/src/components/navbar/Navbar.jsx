@@ -22,7 +22,13 @@ const Navbar = () => {
     <div className='navbar'>
         <div className="left">
             <Link to='/' style={{textDecoration: 'none'}}>
-            <span>Koala Social</span>
+
+            <span style={{display:"flex", alignItems:"center"}}>       
+                       <img style={{ width:"40px"}} src='https://cdn-icons-png.flaticon.com/512/2424/2424317.png' alt="person" />
+    <div>
+      Social
+      </div>
+   </span>
             </Link>
             {/* <HomeOutlinedIcon />
             <GridViewIcon /> */}
@@ -36,7 +42,7 @@ const Navbar = () => {
             <EmailOutlinedIcon />
             <NotificationsOutlinedIcon /> */}
             <ShoppingCartIcon onClick={()=>navigate('/cart')} style={{cursor: 'pointer'}} />
-            {isAdminFunction() && <button onClick={()=>navigate('/create-card')}>Create card</button>}
+            {isAdminFunction() && <button onClick={()=>navigate('/create-card')} className='createBtn'>Create card</button>}
             <div className='user'>
                 <img src='https://cdn-icons-png.flaticon.com/512/2424/2424317.png' alt="person" />
                 <span>{user.username}</span>

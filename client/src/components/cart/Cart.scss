@@ -1,0 +1,103 @@
+.cart{
+    padding: 10px;
+    section{
+
+        h1{
+            margin-bottom: 20px;
+        }
+        .cartList{
+
+            .cartItem {
+                    -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+                    -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+                    box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+                    border-radius: 20px;
+                    background-color: white;
+                    color: #000;
+                    margin-bottom: 20px;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    img{
+                        width: 150px;
+                        height: 120px;
+                        object-fit: cover;
+                    }
+                    .cartInfo{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 10px
+                    }
+                    div{
+                        h5{
+                            color: blue;
+                        }
+                    }
+
+                   .itsinp{
+                    border: 1px solid gray;
+                    text-align: center;
+                    border-radius: 5px;
+                    width: 40px;
+
+                   }
+                   button{
+                    background: #f0544f;
+                    border: none;
+                    padding: 3px;
+                    border-radius: 6px;
+                    color: white;
+                    margin: 10px;
+                    cursor: pointer;
+                   }
+                }
+                .totalCont{
+                 display: flex;
+                justify-content: space-between;
+                .totalCost{
+                    background-color: rgba(21, 168, 21, 0.87);
+                    color: white;
+                    padding: 10px;
+                }
+                .orderBtn{
+                    width: 120px;
+                    height: 50px;
+                    font-size: 20px;
+                    background-color: rgba(21, 168, 21, 0.87);
+                    border-radius: 10px;
+                    border: none;
+                    cursor: pointer;
+                    color: white;
+                    margin-right: 20px;
+                }
+                .cleanBtn{
+                    width: 120px;
+                    height: 50px;
+                    font-size: 20px;
+                    background-color: #f0544f;
+                    border-radius: 10px;
+                    border: none;
+                    cursor: pointer;
+                    color: white;
+                    margin-right: 20px;
+                }
+            }
+           
+            }
+            
+        }
+        
+        .lastBtn{
+            background: black;
+            color: white;
+            width: 123px;
+            height: 41px;
+            border-radius: 30px;
+        }
+                    
+    }
+
+

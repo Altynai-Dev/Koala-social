@@ -9,6 +9,7 @@ export const getAuthUser = () => {
     return user;
 };
 
+
 export const isAdminFunction = () =>{
     const user = getAuthUser();
     if(user.username==="admin") return true;
@@ -26,4 +27,10 @@ export const checkUserLogin = () => {
     const user = localStorage.getItem('user');
     if(!user) return false;
     return true;
+};
+
+export const getTotalPages = async (url) => {
+    const { data } = await axios.get(url);
+    const totalPages = Math.ceil(data.length / 12);
+    return totalPages;
 };

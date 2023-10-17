@@ -3,9 +3,9 @@ import { getRelationships, addRelationship, deleteRelationship } from "../contro
 
 const router = express.Router()
 
-router.get("/", getRelationships)
-router.post("/", addRelationship)
-router.delete("/", deleteRelationship)
+router.get("/", getRelationships);
+router.post("/", addRelationship);
+router.delete("/", deleteRelationship);
 
 
 export default router

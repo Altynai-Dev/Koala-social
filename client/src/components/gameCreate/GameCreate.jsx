@@ -3,22 +3,24 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { createGame } from '../../store/games/gamesActions';
+import { getCategories } from '../../store/games/gamesActions';
 
 const GameCreate = () => {
-  // const { categories } = useSelector(state => state.products);
+  const { categories } = useSelector(state => state.games);
   const [game, setGame] = useState({
     name: "",
     img: "",
     price: 0,
-    description: ''
+    description: '',
+    type: ''
   });
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   dispatch(getCategories());
-  // }, []);
+  useEffect(() => {
+    dispatch(getCategories());
+  }, []);
 
   return (
     <div>

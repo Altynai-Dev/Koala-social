@@ -3,6 +3,7 @@ import './Stories.scss'
 
 const Stories = () => {
   const user = getAuthUser();
+  console.log(user)
   return (
     <div className='stories'>
       <div className="story">

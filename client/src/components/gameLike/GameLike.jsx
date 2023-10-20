@@ -2,6 +2,7 @@ import React from 'react';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { useDispatch } from 'react-redux'; 
 import { toggleGameLike } from '../../store/games/gamesActions';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 const GameLike = ({ isLikedGame, likes, gameId }) => {
   const dispatch = useDispatch();
@@ -14,7 +15,7 @@ const GameLike = ({ isLikedGame, likes, gameId }) => {
         </div>
       ) : (
         <div onClick={() => dispatch(toggleGameLike({ setIsLike: true, likes, gameId }))}>
-          <FavoriteIcon fontSize="large" />
+          <FavoriteBorderIcon fontSize="large" />
         </div>
       )}
     </>

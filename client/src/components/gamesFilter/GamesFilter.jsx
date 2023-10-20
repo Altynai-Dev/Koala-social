@@ -15,10 +15,10 @@ const GamesFilter = () => {
     dispatch(getCategories());
   }, []);
 
-  useEffect(() => {
-    dispatch(changeCategory({ category: oneCategory }));
-    // dispatch(getGames());
-  }, [oneCategory]);
+  // useEffect(() => {
+  //   dispatch(changeCategory({ category: oneCategory }));
+  //   dispatch(getGames());
+  // }, [oneCategory]);
 
   useEffect(() => {
     if(!currentCategory) {

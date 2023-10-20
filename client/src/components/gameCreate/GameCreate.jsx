@@ -23,20 +23,12 @@ const GameCreate = () => {
   }, []);
 
   return (
-    <div>
+    <div className='createCard'>
       <h3>Create Card</h3>
       <input
         type="text"
         placeholder="Name"
         onChange={(e) => setGame({ ...game, name: e.target.value })}
-      />
-
-      <input
-        type="text"
-        placeholder="Image"
-        onChange={(e) =>
-          setGame({ ...game, img: e.target.value })
-        }
       />
 
       <input
@@ -54,25 +46,23 @@ const GameCreate = () => {
         }
       />
 
-        {/* <select onChange={(e) => setGame({ ...game, type: e.target.value })} className="w-full mb-4 p-3 h-12 border rounded-md">
+        <select onChange={(e) => setGame({ ...game, type: e.target.value })}>
           <option disabled>Choose category</option>
           {categories.map(category => (
             <option key={category} value={category}>{category}</option>
           ))}
-        </select> */}
-
-      {/* <div className="flex flex-row w-full">
+        </select>
         <input
-          className="border border-slate-300 w-full h-12 p-3 rounded mb-4"
-          type="text"
-          placeholder="Picture"
-          onChange={(e) => setProduct({ ...product, picture: e.target.value })}
-        />
-        {product.picture ? (
+        type="text"
+        placeholder="Image"
+        onChange={(e) =>
+          setGame({ ...game, img: e.target.value })
+        }/>
+        {game.img ? (
           <img
             className="m-2 rounded-lg"
-            src={product.picture}
-            alt={product.name}
+            src={game.img}
+            alt={game.name}
             width="100"
             height="100"
           />
@@ -85,7 +75,6 @@ const GameCreate = () => {
             height="100"
           />
         )}
-      </div> */}
       <button
         onClick={() => {
           dispatch(createGame({ game }));

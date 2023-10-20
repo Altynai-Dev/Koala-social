@@ -12,11 +12,13 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import LoginIcon from '@mui/icons-material/Login';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import StarBorderPurple500Icon from '@mui/icons-material/StarBorderPurple500';
+import MenuIcon from '@mui/icons-material/Menu';
+import { useState } from 'react';
 
 const Navbar = () => {
   const user = getAuthUser();
   const navigate = useNavigate();
- 
+ const [isBurger, setIsBurger] = useState(false);
 
   return (
     <div className='navbar'>
@@ -28,8 +30,20 @@ const Navbar = () => {
     <div>
       Social
       </div>
+      
    </span>
             </Link>
+            <div  className='burger'><MenuIcon onClick={()=>setIsBurger(true)} /></div>
+            {isBurger && 
+            <div className='burgerContent'>
+              <ul>
+                <Link to='/'><li onClick={()=>setIsBurger(false)}>Home</li></Link>
+                <Link to={`/profile/${user.id}`}><li onClick={()=>setIsBurger(false)}>Profile</li></Link>
+                <Link to='/users'><li onClick={()=>setIsBurger(false)}>Users</li></Link>
+                <Link to='/games'><li onClick={()=>setIsBurger(false)}>Games</li></Link>
+              </ul>
+            </div>
+            }
             {/* <HomeOutlinedIcon />
             <GridViewIcon /> */}
             {/* <div className='search'>
@@ -41,6 +55,7 @@ const Navbar = () => {
             {/* <Person2OutlinedIcon />
             <EmailOutlinedIcon />
             <NotificationsOutlinedIcon /> */}
+            
             <StarBorderPurple500Icon onClick={()=>navigate('/favorites-list')} fontSize='large'/>
             <ShoppingCartIcon onClick={()=>navigate('/cart')} style={{cursor: 'pointer'}} />
             {isAdminFunction() && <button onClick={()=>navigate('/create-card')} className='createBtn'>Create card</button>}

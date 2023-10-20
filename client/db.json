@@ -1,15 +1,27 @@
 {
   "games": [
     {
-      "id": "1",
-      "name": "Mario",
-      "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/software/switch/70010000068688/a13441a9532b1c9e90f657ee1c67255de073707543ff6735ceb57b472faec691",
+      "id": "2",
+      "name": "Super Mario RPG™",
+      "img": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/software/switch/70010000068683/fe4afe940b0e707798332e86f0af56cdbde48da59dc37cdfb8d59febb88ac72a",
       "price": "59.99",
-      "description": "Mario and friends have been invited to visit the colorful Flower Kingdom, just a short hop away from the Mushroom Kingdom. Unfortunately, King Bowser has transformed into a flying castle and is causing chaos across their peaceful land. Now our heroes must save the day—and the Flower Kingdom—in this wonderous new adventure!",
+      "description": "Team up with an oddball group of heroes to save Star Road and stop the troublemaking Smithy Gang. This colorful RPG has updated graphics and cinematics that add even more charm to the unexpected alliance between Mario, Bowser, Peach, and original characters Mallow and Geno. Enter (or revisit) this world of eccentric allies and offbeat enemies in an RPG for everyone.",
       "type": "Mario",
       "likes": [
         {
-          "id": 1697570649779,
+          "id": 1697654364062,
+          "user": {
+            "id": 23,
+            "username": "Sasha",
+            "email": "sasha@gmail.com",
+            "name": "Sasha",
+            "coverPic": null,
+            "profilePic": null,
+            "city": null
+          }
+        },
+        {
+          "id": 1697658912466,
           "user": {
             "id": 17,
             "username": "admin",
@@ -19,20 +31,34 @@
             "profilePic": null,
             "city": null
           }
+        },
+        {
+          "id": 1697660433843,
+          "user": {
+            "id": 24,
+            "username": "FooterBeka",
+            "email": "footer@gmail.com",
+            "name": "Footer Beka",
+            "coverPic": null,
+            "profilePic": null,
+            "city": null
+          }
+        },
+        {
+          "id": 1697818229664,
+          "user": {
+            "id": 13,
+            "username": "John",
+            "email": "john@gmail.com",
+            "name": "John Brown",
+            "coverPic": "1697415011988premium_photo-1688891564708-9b2247085923.jpg",
+            "profilePic": "1697415011971beach.jpg",
+            "city": "Miami"
+          }
         }
       ],
-      "comments": [],
-      "favorites": false
-    },
-    {
-      "id": "2",
-      "name": "Super Mario RPG™",
-      "img": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/software/switch/70010000068683/fe4afe940b0e707798332e86f0af56cdbde48da59dc37cdfb8d59febb88ac72a",
-      "price": "59.99",
-      "description": "Team up with an oddball group of heroes to save Star Road and stop the troublemaking Smithy Gang. This colorful RPG has updated graphics and cinematics that add even more charm to the unexpected alliance between Mario, Bowser, Peach, and original characters Mallow and Geno. Enter (or revisit) this world of eccentric allies and offbeat enemies in an RPG for everyone.",
-      "type": "Mario",
-      "likes": [],
-      "favorites": true
+      "favorites": false,
+      "comments": []
     },
     {
       "id": "3",
@@ -256,7 +282,23 @@
       "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000000734/db8a252a84301594bdc4eed1be3dbd8d3de5086bc79f6ee1f8060c9a5630101f",
       "price": "39.99",
       "description": "Get crafty with Yoshi in a handicraft world. Jump into a new Yoshi adventure in a world made of everyday objects—like boxes and paper cups! As Yoshi, you’ll leap up high, gulp down enemies, and set out on a treasure hunt to find all the different collectables. On the flip side, stages can be played backwards, providing new perspectives to explore and new ways to locate some of the more craftily hidden items! It all started when Kamek and Baby Bowser set out to steal a gem-set stone. Legend has it that this fabled artifact can grant the bearer their wildest dreams! But when the artifact’s gems are sent flying, it falls upon Yoshi and friends to find them. Luckily, saving the day can be cooperative and",
-      "type": "craft"
+      "type": "craft",
+      "likes": [
+        {
+          "id": 1697653877506,
+          "user": {
+            "id": 22,
+            "username": "Jason",
+            "email": "jason@gmail.com",
+            "name": "Jason",
+            "coverPic": null,
+            "profilePic": null,
+            "city": null
+          }
+        }
+      ],
+      "favorites": false,
+      "comments": []
     },
     {
       "id": "15",
@@ -549,31 +591,300 @@
         }
       ],
       "id": 7
+    },
+    {
+      "user": {
+        "id": 13,
+        "username": "John",
+        "email": "john@gmail.com",
+        "name": "John Brown",
+        "coverPic": "1697415011988premium_photo-1688891564708-9b2247085923.jpg",
+        "profilePic": "1697415011971beach.jpg",
+        "city": "Miami"
+      },
+      "totalCost": 179.97,
+      "games": [
+        {
+          "count": 3,
+          "totalPrice": 179.97,
+          "gameItem": {
+            "id": "1",
+            "name": "Mario",
+            "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/software/switch/70010000068688/a13441a9532b1c9e90f657ee1c67255de073707543ff6735ceb57b472faec691",
+            "price": "59.99",
+            "description": "Mario and friends have been invited to visit the colorful Flower Kingdom, just a short hop away from the Mushroom Kingdom. Unfortunately, King Bowser has transformed into a flying castle and is causing chaos across their peaceful land. Now our heroes must save the day—and the Flower Kingdom—in this wonderous new adventure!",
+            "type": "Mario",
+            "likes": [
+              {
+                "id": 1697570649779,
+                "user": {
+                  "id": 17,
+                  "username": "admin",
+                  "email": "admin@gmail.com",
+                  "name": "admin",
+                  "coverPic": null,
+                  "profilePic": null,
+                  "city": null
+                }
+              }
+            ],
+            "comments": [],
+            "favorites": false
+          }
+        }
+      ],
+      "id": 8
+    },
+    {
+      "user": {
+        "id": 22,
+        "username": "Jason",
+        "email": "jason@gmail.com",
+        "name": "Jason",
+        "coverPic": null,
+        "profilePic": null,
+        "city": null
+      },
+      "totalCost": 279.93,
+      "games": [
+        {
+          "count": 7,
+          "totalPrice": 279.93,
+          "gameItem": {
+            "id": "14",
+            "name": "Yoshi’s Crafted World™",
+            "img": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_801/b_white/f_auto/q_auto/ncom/software/switch/70010000000734/db8a252a84301594bdc4eed1be3dbd8d3de5086bc79f6ee1f8060c9a5630101f",
+            "price": "39.99",
+            "description": "Get crafty with Yoshi in a handicraft world. Jump into a new Yoshi adventure in a world made of everyday objects—like boxes and paper cups! As Yoshi, you’ll leap up high, gulp down enemies, and set out on a treasure hunt to find all the different collectables. On the flip side, stages can be played backwards, providing new perspectives to explore and new ways to locate some of the more craftily hidden items! It all started when Kamek and Baby Bowser set out to steal a gem-set stone. Legend has it that this fabled artifact can grant the bearer their wildest dreams! But when the artifact’s gems are sent flying, it falls upon Yoshi and friends to find them. Luckily, saving the day can be cooperative and",
+            "type": "craft",
+            "likes": [],
+            "favorites": false,
+            "comments": []
+          }
+        }
+      ],
+      "id": 9
+    },
+    {
+      "user": {
+        "id": 23,
+        "username": "Sasha",
+        "email": "sasha@gmail.com",
+        "name": "Sasha",
+        "coverPic": null,
+        "profilePic": null,
+        "city": null
+      },
+      "totalCost": 179.97,
+      "games": [
+        {
+          "count": 3,
+          "totalPrice": 179.97,
+          "gameItem": {
+            "id": "2",
+            "name": "Super Mario RPG™",
+            "img": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/software/switch/70010000068683/fe4afe940b0e707798332e86f0af56cdbde48da59dc37cdfb8d59febb88ac72a",
+            "price": "59.99",
+            "description": "Team up with an oddball group of heroes to save Star Road and stop the troublemaking Smithy Gang. This colorful RPG has updated graphics and cinematics that add even more charm to the unexpected alliance between Mario, Bowser, Peach, and original characters Mallow and Geno. Enter (or revisit) this world of eccentric allies and offbeat enemies in an RPG for everyone.",
+            "type": "Mario",
+            "likes": [
+              {
+                "id": 1697654364062,
+                "user": {
+                  "id": 23,
+                  "username": "Sasha",
+                  "email": "sasha@gmail.com",
+                  "name": "Sasha",
+                  "coverPic": null,
+                  "profilePic": null,
+                  "city": null
+                }
+              }
+            ],
+            "favorites": false,
+            "comments": []
+          }
+        }
+      ],
+      "id": 10
+    },
+    {
+      "user": {
+        "id": 17,
+        "username": "admin",
+        "email": "admin@gmail.com",
+        "name": "admin",
+        "coverPic": null,
+        "profilePic": null,
+        "city": null
+      },
+      "totalCost": 59.99,
+      "games": [
+        {
+          "count": 1,
+          "totalPrice": 59.99,
+          "gameItem": {
+            "id": "2",
+            "name": "Super Mario RPG™",
+            "img": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/software/switch/70010000068683/fe4afe940b0e707798332e86f0af56cdbde48da59dc37cdfb8d59febb88ac72a",
+            "price": "59.99",
+            "description": "Team up with an oddball group of heroes to save Star Road and stop the troublemaking Smithy Gang. This colorful RPG has updated graphics and cinematics that add even more charm to the unexpected alliance between Mario, Bowser, Peach, and original characters Mallow and Geno. Enter (or revisit) this world of eccentric allies and offbeat enemies in an RPG for everyone.",
+            "type": "Mario",
+            "likes": [
+              {
+                "id": 1697654364062,
+                "user": {
+                  "id": 23,
+                  "username": "Sasha",
+                  "email": "sasha@gmail.com",
+                  "name": "Sasha",
+                  "coverPic": null,
+                  "profilePic": null,
+                  "city": null
+                }
+              }
+            ],
+            "favorites": false,
+            "comments": []
+          }
+        }
+      ],
+      "id": 11
+    },
+    {
+      "user": {
+        "id": 24,
+        "username": "FooterBeka",
+        "email": "footer@gmail.com",
+        "name": "Footer Beka",
+        "coverPic": null,
+        "profilePic": null,
+        "city": null
+      },
+      "totalCost": 359.94,
+      "games": [
+        {
+          "count": 6,
+          "totalPrice": 359.94,
+          "gameItem": {
+            "id": "2",
+            "name": "Super Mario RPG™",
+            "img": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/software/switch/70010000068683/fe4afe940b0e707798332e86f0af56cdbde48da59dc37cdfb8d59febb88ac72a",
+            "price": "59.99",
+            "description": "Team up with an oddball group of heroes to save Star Road and stop the troublemaking Smithy Gang. This colorful RPG has updated graphics and cinematics that add even more charm to the unexpected alliance between Mario, Bowser, Peach, and original characters Mallow and Geno. Enter (or revisit) this world of eccentric allies and offbeat enemies in an RPG for everyone.",
+            "type": "Mario",
+            "likes": [
+              {
+                "id": 1697654364062,
+                "user": {
+                  "id": 23,
+                  "username": "Sasha",
+                  "email": "sasha@gmail.com",
+                  "name": "Sasha",
+                  "coverPic": null,
+                  "profilePic": null,
+                  "city": null
+                }
+              },
+              {
+                "id": 1697658912466,
+                "user": {
+                  "id": 17,
+                  "username": "admin",
+                  "email": "admin@gmail.com",
+                  "name": "admin",
+                  "coverPic": null,
+                  "profilePic": null,
+                  "city": null
+                }
+              },
+              {
+                "id": 1697660433843,
+                "user": {
+                  "id": 24,
+                  "username": "FooterBeka",
+                  "email": "footer@gmail.com",
+                  "name": "Footer Beka",
+                  "coverPic": null,
+                  "profilePic": null,
+                  "city": null
+                }
+              }
+            ],
+            "favorites": true,
+            "comments": []
+          }
+        }
+      ],
+      "id": 12
+    },
+    {
+      "user": {
+        "id": 13,
+        "username": "John",
+        "email": "john@gmail.com",
+        "name": "John Brown",
+        "coverPic": "1697415011988premium_photo-1688891564708-9b2247085923.jpg",
+        "profilePic": "1697415011971beach.jpg",
+        "city": "Miami"
+      },
+      "totalCost": 239.96,
+      "games": [
+        {
+          "count": 4,
+          "totalPrice": 239.96,
+          "gameItem": {
+            "id": "2",
+            "name": "Super Mario RPG™",
+            "img": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/software/switch/70010000068683/fe4afe940b0e707798332e86f0af56cdbde48da59dc37cdfb8d59febb88ac72a",
+            "price": "59.99",
+            "description": "Team up with an oddball group of heroes to save Star Road and stop the troublemaking Smithy Gang. This colorful RPG has updated graphics and cinematics that add even more charm to the unexpected alliance between Mario, Bowser, Peach, and original characters Mallow and Geno. Enter (or revisit) this world of eccentric allies and offbeat enemies in an RPG for everyone.",
+            "type": "Mario",
+            "likes": [
+              {
+                "id": 1697654364062,
+                "user": {
+                  "id": 23,
+                  "username": "Sasha",
+                  "email": "sasha@gmail.com",
+                  "name": "Sasha",
+                  "coverPic": null,
+                  "profilePic": null,
+                  "city": null
+                }
+              },
+              {
+                "id": 1697658912466,
+                "user": {
+                  "id": 17,
+                  "username": "admin",
+                  "email": "admin@gmail.com",
+                  "name": "admin",
+                  "coverPic": null,
+                  "profilePic": null,
+                  "city": null
+                }
+              },
+              {
+                "id": 1697660433843,
+                "user": {
+                  "id": 24,
+                  "username": "FooterBeka",
+                  "email": "footer@gmail.com",
+                  "name": "Footer Beka",
+                  "coverPic": null,
+                  "profilePic": null,
+                  "city": null
+                }
+              }
+            ],
+            "favorites": false,
+            "comments": []
+          }
+        }
+      ],
+      "id": 13
     }
   ],
-  "favorites": [
-    {
-      "id": "favorite-2",
-      "game": {
-        "id": "2",
-        "name": "Super Mario RPG™",
-        "img": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/software/switch/70010000068683/fe4afe940b0e707798332e86f0af56cdbde48da59dc37cdfb8d59febb88ac72a",
-        "price": "59.99",
-        "description": "Team up with an oddball group of heroes to save Star Road and stop the troublemaking Smithy Gang. This colorful RPG has updated graphics and cinematics that add even more charm to the unexpected alliance between Mario, Bowser, Peach, and original characters Mallow and Geno. Enter (or revisit) this world of eccentric allies and offbeat enemies in an RPG for everyone.",
-        "type": "Mario",
-        "likes": [],
-        "favorites": true
-      },
-      "name": {
-        "id": "2",
-        "name": "Super Mario RPG™",
-        "img": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/software/switch/70010000068683/fe4afe940b0e707798332e86f0af56cdbde48da59dc37cdfb8d59febb88ac72a",
-        "price": "59.99",
-        "description": "Team up with an oddball group of heroes to save Star Road and stop the troublemaking Smithy Gang. This colorful RPG has updated graphics and cinematics that add even more charm to the unexpected alliance between Mario, Bowser, Peach, and original characters Mallow and Geno. Enter (or revisit) this world of eccentric allies and offbeat enemies in an RPG for everyone.",
-        "type": "Mario",
-        "likes": [],
-        "favorites": true
-      }
-    }
-  ]
+  "favorites": []
 }

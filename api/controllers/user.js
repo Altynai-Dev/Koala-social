@@ -21,7 +21,8 @@ export const getAllUsers = (req, res) =>{
       const { password, ...rest } = item; // Destructure and omit the 'password' field
       return rest;
     });
-    return res.status(200).json(newData);
+    const showData = newData.filter(item => item.name !== "admin");
+    return res.status(200).json(showData);
   });
 }
 

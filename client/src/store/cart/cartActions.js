@@ -37,7 +37,7 @@ export const toggleGameToCart = (gameObj) => {
             gameItem: gameObj
         });
     } else {
-        cart.games = cart.games.filter(game => game.gameItem.id !== gameObj.id);
+        cart.game000s = cart.games.filter(game => game.gameItem.id !== gameObj.id);
     };
     cart.totalCost = countCartTotalCost(cart.games);
     setCartData(cart);

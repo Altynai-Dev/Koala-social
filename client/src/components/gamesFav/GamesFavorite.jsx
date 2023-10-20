@@ -6,7 +6,6 @@ import GradeIcon from '@mui/icons-material/Grade';
 
 const GamesFavorite = ({game}) => {
     const dispatch = useDispatch();
-
   return (
     <>
         {game.favorites ? (

@@ -21,6 +21,7 @@ export const logout = async() => {
     await axios.post('http://localhost:8888/api/auth/logout', {
         withCredentials: true
     })
+    localStorage.removeItem('cart')
 };
 
 export const checkUserLogin = () => {

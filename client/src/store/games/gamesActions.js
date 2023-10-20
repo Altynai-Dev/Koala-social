@@ -15,6 +15,7 @@ export const getGames = createAsyncThunk(
     }
 );
 
+
 export const getOneGame = createAsyncThunk(
     'games/getOneGame',
     async ({ id }) => {
@@ -42,10 +43,17 @@ export const editGame = createAsyncThunk(
 export const deleteGame = createAsyncThunk(
     'games/deleteGame',
     async ({ id }, { dispatch }) => {
+        dispatch(deleteFromFav({id}))
         await axios.delete(`${GAMES_API}/${id}`);
         dispatch(getGames());
     }
 );
+
+export const deleteFromFav = createAsyncThunk('games/deleteFromFav', async ({id}) => {
+
+    await axios.delete(`${FAVORITES_API}/favorite-${id}`)
+})
+
 export const getCategories = createAsyncThunk(
     'games/getCategories',
     async () => {
@@ -102,6 +110,7 @@ export const addToFavorites = createAsyncThunk(
     'games/addToFavorites',
     async(updatedGameObj, {dispatch})=>{
         if(updatedGameObj.favorites){
+            console.log(updatedGameObj)
             const favoriteObj = {
                 id: `favorite-${updatedGameObj.id}`,
                 game: updatedGameObj
